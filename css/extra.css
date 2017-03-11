@@ -1,0 +1,99 @@
+.register-wrap {
+    width: 100%;
+    padding: 35px 10px 22px 10px;
+}
+
+.reg-item {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.reg-item .reg-input {
+    position: absolute;
+    left: 0;
+    line-height: 50px;
+    color: #595959;
+    right: 10px;
+    width: 100%;
+    font-size: 16px;
+    padding-right: 10px;
+    background: transparent;
+}
+
+.reg-item-user {
+    background: url(../images/username-icon.png?__inline) no-repeat 10px center;
+    background-size: 15px;
+    background-position-x: 15px;
+}
+
+.reg-item-captcha {
+    background: url(../images/sjyzm-icon.png?__inline) no-repeat 10px center;
+    padding-right: 85px;
+}
+
+.reg-item-captcha .captcha-btn {
+    position: absolute;
+    width: 75px;
+    height: 30px;
+    top: 5px;
+    right: 10px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #06cdb8;
+    border-radius: 3px;
+}
+
+.reg-item-captcha .captcha-btn[disabled] {
+    background-color: #ddd;
+}
+
+.reg-item-password {
+    background: url(../images/password-icon.png?__inline) no-repeat 10px center;
+    background-size: 15px;
+    background-position-x: 15px;
+}
+
+.reg-btn-wrap {
+    padding: 0 10px;
+}
+
+.reg-b-tip {
+    font-size: 12px;
+    /*padding: 10px 22px;*/
+}
+
+.reg-b-tip .reg-bl-tip {
+    color: #06cdb8;
+    float: left;
+}
+
+.reg-b-tip .reg-br-tip {
+    color: #bbb;
+    float: right;
+}
+
+label.error {
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    right: 10px;
+    top: 0;
+    color: #f55555;
+}
+.special-button {
+    padding: 13px 10px 16px;
+    width: 100%;
+}
+.special-button input {
+    line-height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #06cdb8;
+}
+.bg_f3f3f3 {
+    background: #f3f3f3;
+}

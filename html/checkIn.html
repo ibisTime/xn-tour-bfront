@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="head.html?__inline">
+    <title>来来旺旺</title>
+</head>
+
+<body>
+
+	<div class="manageWrap" style="width: 100%;"></div>
+	<!--<div class="pl10 fs15 ba">
+		<div class="ptb18 border-b mt10">标准大床房</div>
+		<div class="ptb18 border-b">203室</div>
+		<div class="ptb18 border-b">不含早，舒适性</div>
+		<div class="ptb18 border-b">¥100.00</div>
+		<div class="ptb18  mb10">已退房，待入住</div>
+	</div>-->
+
+<!--<div class="wp100 pl10 fs15 lh50 ba p-r bb">-->
+	<!--<div class="inline_block wid p-a">酒店订单编号</div>-->
+    <!--<input type="text" placeholder="请输入酒店订单编号" class="fs15 pl120 checkIn-id">-->
+<!--</div>-->
+
+<div class="wp100 pl10 fs15 lh50 ba p-r bb mt10 status11">
+	<div class="inline_block wid p-a">入住人手机号</div>
+    <input type="number" placeholder="请输入手机号码" pattern="[0-9]*" class="fs15 pl120 checkIn-tel">
+</div>
+
+<div class="wp100 pl10 fs15 lh50 ba p-r status11">
+	<div class="inline_block wid p-a">登录密码</div>
+    <input type="password" placeholder="请输入密码"class="fs15 pl120 checkIn-pwd">
+</div>
+
+<div class=" plr10 mt40 status11">
+	<input type="button" value="确定入住" class="but wp100 fs14" id="btn-checkIn">
+</div>
+
+	<link rel="import" href="footer.html?__inline">
+    <script data-loader>
+        require(['app/controller/checkIn']);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="head.html?__inline">
+    <title>来来旺旺</title>
+</head>
+
+<body>
+
+<div class="manageWrap" style="width: 100%;"></div>
+<!--<div class="pl10 fs15 ba">
+	<div class="ptb18 border-b mt10">标准大床房</div>
+	<div class="ptb18 border-b">203室</div>
+	<div class="ptb18 border-b">不含早，舒适性</div>
+	<div class="ptb18 border-b">¥100.00</div>
+	<div class="ptb18  mb10">已入住，待退房</div>
+</div>-->
+
+<div class="wp100 pl10 fs15 lh50 ba p-r mt10">
+	<div class="inline_block wid p-a">登录密码</div>
+    <input type="password" placeholder="请输入密码" class="fs15 pl120 checkIn-pwd">
+</div>
+
+<div class=" plr10 mt40">
+	<input type="button" value="确定退房" class="but wp100 fs15" id="btn-checkOut">
+</div>
+
+	<link rel="import" href="footer.html?__inline">
+    <script data-loader>
+        require(['app/controller/checkOut']);
+    </script>
+    
+</body>
+</html>

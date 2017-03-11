@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="head.html?__inline">
+    <title>来来旺旺</title>
+</head>
+
+<body>
+	<div class="demo"></div>
+	<div class=" back-img p-r " id="rQ-balance">
+		<div class="p-a c-white back-word tc ">
+			<div class="fs15 ">可结算余额(元)</div>
+			<div class="fs30 pt15 rQ-balanceNum"></div>
+		</div>
+		<div><img src="../images/icon-more.png" class="more"></div>
+	</div>
+	
+	<div class="wp100 pl10 fs15 lh50 ba p-r bb" id="rQ-income">
+		<div class="inline_block wid p-a fs15">总收入(元)</div>
+	    <div class="fs15 pl120 rQ-incomeNum"></div>
+	</div>
+	
+	<div class="wp100 pl10 fs15 lh50 ba p-r"  id="rQ-settlement">
+		<div class="inline_block wid p-a">已结算金额</div>
+	    <div class="fs15 pl120 rQ-setNum"></div>
+	</div>
+	<div></div>
+
+	<link rel="import" href="footer.html?__inline">
+    <script data-loader>
+        require(['app/controller/reportQuery']);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="head.html?__inline">
+    <title>来来旺旺</title>
+</head>
+
+<body style="height: 100%;">
+	
+	<div class="wp100 pl10 fs17 lh50 ba p-r bb pr10" id="revise-Tel">
+	    <input type="number" placeholder="请输入新手机号码" pattern="[0-9]*" class="fs15 wp100 revise-Tel">
+	</div>
+	
+	<div class="wp100 pl10 fs17 lh50 ba p-r bb">
+		<div class="inline_block p-a ab_r pr10" id="newTelCode">获取验证码</div>
+	    <input type="number" placeholder="请输入新手机验证码" pattern="[0-9]*" class="fs15 pr120 newTelCode">
+	</div>
+	
+	<!--<div class="wp100 pl10 fs17 lh50 ba p-r bb pr10" id="revise-tPwd">-->
+	    <!--<input type="password" placeholder="请输入交易密码" class="fs15 wp100 revise-tPwd">-->
+	    <!--<div class="reg-b-tip ">-->
+			<!--<a id="fdPwd" class="reg-br-tip fdPwd" style="color: #06cdb8">未设置交易密码?找回交易密码？</a>-->
+		<!--</div>-->
+	<!--</div>-->
+	
+	<div class=" mt40 plr10">
+		<input type="button" value="确定" class="but wp100 fs16" id="reviseSub">
+	</div>
+
+	<link rel="import" href="footer.html?__inline">
+    <script data-loader>
+        require(['app/controller/revise']);
+    </script>
+</body>
+</html>

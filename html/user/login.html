@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>登录</title>
+</head>
+
+<body class="bg_f3f3f3">
+	<form class="register-wrap" id="loginForm">
+		<div class="wp100 bg_fff">
+			<div class="reg-item b-b-e9 reg-item-user">
+				<div class="p_r wp100">
+					<input type="number" placeholder="请输入手机号码" pattern="[0-9]*" id="mobile" name="mobile" class="reg-input"/>
+				</div>
+			</div>
+			<div class="reg-item b-b-e9 reg-item-password">
+				<div class="p_r wp100">
+					<input type="password" placeholder="请输入密码" id="password" name="password" class="reg-input"/>
+				</div>
+			</div>
+		</div>
+	</form>
+	<div class="special-button">
+		<input type="button" id="loginBtn" value="登录"/>
+		<div class="reg-b-tip">
+			<a href="../revisePwd.html" id="fdPwd" class="reg-br-tip fs15 mt20">找回密码?</a>
+		</div>
+	</div>
+    <link rel="import" href="../footer.html?__inline">
+    <script data-loader>
+        require(['app/controller/user/Login']);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+/*房间管理*/
+.green{color:#06cdb8;}
+.fs12{font-size:12px;}
+.fs14{font-size:14px; }
+.fs15{font-size:15px; }
+.fs16{font-size:16px; }
+.fs17{font-size:17px; }
+.fs18{font-size:18px;}
+.lh44{line-height: 44px;}
+.ba{background-color:#ffffff;}
+.return{
+	background:url(../images/return.png) no-repeat  10px center;background-color:#ffffff;
+	background-size: 8px 16px;
+}
+.manage{padding:10px 10px;}
+.bb{border-bottom:0.5px #e5e5e5 solid;}
+.image{width:100px; height:80px;}
+.room-style{font-size:16px;}
+.room-number,.room-point{font-size:14px;color:#999999;}
+.price{font-size:16px;color:#ff9c00;}
+.lh19{line-height:20px;}
+.check-in{float:right;color:#06cdb8;}
+.back{float:right;color:#999999;}
+.over-hide{ overflow: hidden}
+
+/*退房*/
+.fs15{font-size:15px;}
+.ptb18{padding-top:18px;padding-bottom:18px;}
+.border-b{border-bottom:0.5px solid #e5e5e5;}
+.lh50{line-height:50px;}
+.wid{width:100px;}
+.p-a{position:absolute;}
+.p-r{position:relative;}
+.pl120{padding-left:120px;}
+.but{line-height:40px;background-color:#06cdb8;color:#ffffff;border-radius:5px;}
+.status11{display: none;}
+
+/*首页*/
+.img-height{height:224px;background:url(../images/bg.png) no-repeat center;background-size:cover;}
+.head{height:55px;}
+.h-name{color:#ffffff;padding-top:10px;}
+.pos{left: 50%;
+    margin-left: -50px;
+    top: 50px;}
+.icon{height:80px;}
+.icon-box{margin-left:55px;margin-top:36px;}
+.mt22{margin-top:22px;}
+
+/*报表查询*/
+
+.back-img{background:url(../images/bg2.png) no-repeat center ;height:119px;background-size:cover;}
+.fs30{font-size:30px;}
+.c-white{color:#ffffff;}
+.back-word{left: 50%;   top: 50%;transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);}
+.more{height:16px;position:absolute;top: 50%;margin-top: -8px;left: 92%;}
+
+/*账单*/
+.state{}
+.time{color:#999999;float:right;}
+.p-rice{color:#ff9c00;}
+.finally{color:#999999;}
+
+/*系统*/
+.newp{width:40px;}
+.userPic{border-radius: 50%;overflow: hidden;}
+
+/*账户安全*/
+.btn-SignOut{
+	width: 100%;
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+}
+
+.fdPwd{
+	padding: 10px 0;
+}
+.icon-userPic{
+	height: 100px;
+}
