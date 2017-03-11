@@ -25,7 +25,7 @@ define([
         		dpicture ,//图片
         		dprice, //价格
         		droomNum, //房号
-        		ddescription;//描述
+        		ddescription,//描述
         		dDate;//描述
 
         		var s = "";
