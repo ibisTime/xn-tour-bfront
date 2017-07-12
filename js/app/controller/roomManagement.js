@@ -3,11 +3,11 @@ define([
     'app/util/ajax',
     'app/module/loading/loading'
 ], function(base, Ajax, loading) {
-	
+
 	if(!base.getUserId()){
 		location.href="user/login.html"
 	}
-	
+
 	var userId = base.getUserId();
 	var hotalCode = base.getUrlParam("code");
 	var start = 1;//第几页
@@ -15,11 +15,11 @@ define([
 	var sum;////总条数
 	var limitNum = 10;//每页个数
 	var num=0;//已加载消息数
-	
+
 	var list = "";
-	
+
 	ajaxUpdata(start,limitNum);
-	
+
 	$("#manageWrap").on("click", ".manageList", function(e){
 		var va = $(this);
 		var code = va.attr("data-code");
@@ -38,7 +38,7 @@ define([
             location.href = "checkOut.html?code="+code+"&hcode="+hcode;
         }
 	});
-	
+
 	//加载
 	$(".updateMore").on("click",function(){
 		if(start<startNum){
@@ -49,11 +49,11 @@ define([
 			$(".updateMore p").html("没有更多  ···");
 		}
 	})
-	
+
 	function ajaxUpdata(sta,lim){
 		$.when(
 //			Ajax.get("618031",{"hotalCode":hotalCode}),
-			
+
 			Ajax.get("618034",{"hotalCode":hotalCode,"start":sta,"limit": lim}),
 			// base.getDictList("hh_type"),//房型
             base.getDictList("htorder_status"),//状态
@@ -87,14 +87,14 @@ define([
 	//						console.log("已加载消息条数"+num,"总消息条数"+sum)
 
 							dtype = res1.data.list[i].name,//类型
-							dpicture = res1.data.list[i].picture;//图片
+							dpicture = res1.data.list[i].picture.split("||")[0];//图片
 							dprice = res1.data.list[i].price/1000;
 							dprice = "￥"+dprice.toFixed(2);//价格
 							dtotalNum = res1.data.list[i].totalNum ;//房号
 
 							ddescription = res1.data.list[i].description || "";
 							ddescription = dictArray2(ddescription,dict3);//描述
-							
+
 							dDate = base.formatDate(res1.data.list[i].startDate,"yyyy-MM-dd")+"至"+base.formatDate(res1.data.list[i].endDate,"yyyy-MM-dd");
 
 							if(res1.data.list[i].status == 1){//跳转可入住
@@ -152,7 +152,7 @@ define([
 
 			});
 	}
-	
+
 	function dictArray(dkey,arrayData){//类型
 		for(var i = 0 ; i < arrayData.length; i++ ){
 			if(dkey == arrayData[i].dkey){
@@ -170,5 +170,5 @@ define([
 		}
         return temp;
 	}
-	
+
 });
